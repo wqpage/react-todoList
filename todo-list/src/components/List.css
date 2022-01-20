@@ -1,0 +1,21 @@
+.todo-li{
+    list-style: none;
+    width:500px;
+    height:40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-left:3px solid #5f9ea0;
+    padding:0 10px;
+    margin-top:10px;
+    position:relative
+  }
+  .todo-li input {
+    margin-right:10px
+  }
+  .delete-bt{
+    border:0;
+    color:red;
+    float: right;
+    cursor: pointer;
+    margin-top:10px
+  }
