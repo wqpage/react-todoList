@@ -10,6 +10,8 @@ class TodoList extends React.Component {
       list:['吃饭','学习react','打豆豆'],
       todoValue: ''
     }
+    this.addData = this.addData.bind(this)
+    this.handleDelete = this.handleDelete.bind(this)
   }
   addData(value) {
     this.setState({
@@ -28,7 +30,7 @@ class TodoList extends React.Component {
   render(){
     return (
       <div className="container">
-          <Header todoValue={this.state.todoValue} list={this.state.list} addData={this.addData.bind(this)}/>
+          <Header todoValue={this.state.todoValue} list={this.state.list} addData={this.addData}/>
           <List list={this.state.list} deleteItem={this.handleDelete.bind(this)}/>
       </div>
     )
